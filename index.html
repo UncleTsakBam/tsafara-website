@@ -90,9 +90,11 @@
 
 <nav>
 <ul>
-<li><a href="#work">Υπηρεσίες</a></li>
 <li><a href="#about">Σχετικά</a></li>
+<li><a href="#work">Υπηρεσίες</a></li>
+<li><a href="#faq">F.A.Q.</a></li>
 <li><a href="#contact">Επικοινωνία</a></li>
+
 </ul>
 </nav>
 </header>
@@ -179,6 +181,27 @@
 
 </article>
 
+<!-- F.A.Q. -->
+<article id="faq">
+<div class="container">     
+      <h2 class="major">Συχνές Ερωτήσεις (F.A.Q.)</h2>
+      <div class="faq-item">
+          <button class="faq-question">1. Τι περιλαμβάνει ένα τοπογραφικό διάγραμμα;</button>
+          <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nulla sed sem rhoncus sagittis et non mi. Aliquam eros metus, congue ac placerat eget, ornare sit amet felis. Aenean venenatis nec nunc sed egestas. Sed semper elit non ultricies ultrices. Duis tristique nisl ut leo feugiat, non finibus eros facilisis. Morbi tincidunt suscipit enim vel porttitor. Vestibulum ac felis hendrerit, egestas felis sit amet, lacinia diam.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <button class="faq-question">2. Τι περιλαμβάνει ένα τοπογραφικό διάγραμμα;</button>
+          <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at nulla sed sem rhoncus sagittis et non mi. Aliquam eros metus, congue ac placerat eget, ornare sit amet felis. Aenean venenatis nec nunc sed egestas. Sed semper elit non ultricies ultrices. Duis tristique nisl ut leo feugiat, non finibus eros facilisis. Morbi tincidunt suscipit enim vel porttitor. Vestibulum ac felis hendrerit, egestas felis sit amet, lacinia diam.</p>
+          </div>
+      </div>
+      
+</div>
+
+</article>
+
 <!-- ΕΠΙΚΟΙΝΩΝΙΑ -->
 <article id="contact">
 
@@ -237,6 +260,23 @@
 </footer>
 
 </div>
+
+<script>
+
+// FAQ collapsible
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const isActive = button.classList.contains('active');
+        document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = null);
+        if(!isActive){
+            button.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
+</script>
 
 <div id="bg"></div>
 
