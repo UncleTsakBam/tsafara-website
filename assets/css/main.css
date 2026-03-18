@@ -1879,3 +1879,378 @@ ul.icons li a.fa-linkedin-in:hover {
     box-shadow: inset 0 0 0 1px #0077B5;
     color: #fff;
 }
+
+/* Κάνει το κουμπί Προσφορά στο μενού να ξεχωρίζει */
+.button-quote {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff !important;
+    font-weight: bold;
+    color: #ffffff !important;
+    border-radius: 4px;
+}
+
+.button-quote:hover {
+    background-color: #ffffff !important;
+    color: #1b1f22 !important;
+}
+
+/* Κεντράρισμα του CTA κουμπιού κάτω από το Nav */
+.main-cta {
+    justify-content: center;
+    margin-top: 2rem !important;
+}
+
+/* Διόρθωση για τα πεδία 2x2 στη φόρμα */
+#quote .field.half {
+    width: 50%;
+    float: left;
+    padding-left: 1rem;
+}
+
+#quote .field.half:nth-child(odd) {
+    padding-left: 0;
+    clear: both;
+}
+
+/* Responsive διόρθωση για κινητά (να γίνονται 1x1) */
+@media screen and (max-width: 480px) {
+    #quote .field.half {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+}
+
+/* --- Fix Contact Fields Grid (2x2) --- */
+
+/* Εξασφαλίζει ότι το label είναι πάνω από το input και στοιχισμένο αριστερά */
+#quote .contact-fields-grid label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem; /* Απόσταση label από το input */
+    letter-spacing: 0.1rem;
+}
+
+/* Σιγουρεύει ότι τα inputs παίρνουν όλο το πλάτος της στήλης τους */
+#quote .contact-fields-grid input[type="text"],
+#quote .contact-fields-grid input[type="email"] {
+    width: 100% !important;
+}
+
+/* Προσθέτει λίγο "αέρα" μεταξύ των σειρών */
+#quote .contact-fields-grid .row {
+    margin-bottom: 1.5rem;
+}
+
+/* --- Fix για τα Checkboxes Επικοινωνίας --- */
+#quote .contact-method {
+    margin-top: 2rem;
+}
+
+#quote .contact-method label {
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Responsive διόρθωση: Στα κινητά (max-width 480px) γίνονται 1x1 */
+@media screen and (max-width: 480px) {
+    #quote .contact-fields-grid .col-6 {
+        width: 100%;
+        margin-bottom: 1rem; /* Απόσταση μεταξύ των κάθετων πεδίων */
+    }
+}
+
+/* --- Fix Contact Fields & Layout --- */
+
+/* Δημιουργεί χώρο πάνω από τον τίτλο για να μην πέφτει το 'Όνομα' πάνω του */
+#quote .contact-header,
+#request .contact-header {
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
+    display: block;
+    clear: both;
+}
+
+/* Εξασφαλίζει ότι το label είναι ΠΑΝΩ από το input και στοιχισμένο αριστερά */
+#quote .contact-fields-grid label,
+#quote .comment-fields-grid label,
+#request .contact-fields-grid label,
+#request .comment-fields-grid label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.75rem; /* Απόσταση label από το input */
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+/* Σιγουρεύει ότι τα inputs παίρνουν όλο το πλάτος της στήλης τους */
+#quote .contact-fields-grid input,
+#quote .comment-fields-grid textarea,
+#request .contact-fields-grid input,
+#request .comment-fields-grid textarea {
+    width: 100% !important;
+}
+
+/* Προσθέτει "αέρα" μεταξύ των σειρών του grid */
+#quote .contact-fields-grid .row,
+#request .contact-fields-grid .row {
+    margin-bottom: 1.5rem;
+}
+
+/* --- Fix για τα Checkboxes Επικοινωνίας --- */
+#quote .contact-method,
+#request .contact-method {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#quote .contact-method label,
+#request .contact-method label {
+    text-align: left;
+    display: block;
+}
+
+/* Responsive διόρθωση: Στα κινητά (max-width 480px) γίνονται 1x1 */
+@media screen and (max-width: 480px) {
+    #quote .contact-fields-grid .col-6,
+    #request .contact-fields-grid .col-6 {
+        width: 100%;
+        margin-bottom: 1rem; /* Απόσταση μεταξύ των κάθετων πεδίων */
+    }
+}
+
+/* --- Διορθώσεις για τη Φόρμα Προσφοράς --- */
+
+/* Δημιουργία χώρου για τους τίτλους μέσα στη φόρμα */
+.field.section-divider {
+    margin-top: 3rem !important;
+    width: 100% !important;
+    border-bottom: 0 !important;
+}
+
+.field.section-divider h3 {
+    margin-bottom: 1rem !important;
+    display: block;
+}
+
+/* Εξασφάλιση 2x2 στα Στοιχεία Επαφής */
+#quote .field.half {
+    width: calc(50% - 0.75rem) !important;
+}
+
+/* Σωστή στοίχιση labels */
+#quote label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Responsive για κινητά: Όλα 1x1 */
+@media screen and (max-width: 480px) {
+    #quote .field.half {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .field.section-divider {
+        margin-top: 2rem !important;
+    }
+}
+
+/* Στυλ για το κεντρικό κουμπί κάτω από το μενού */
+.main-cta {
+    justify-content: center;
+    margin-top: 2.5rem !important;
+    display: flex;
+}
+
+/* --- Διορθώσεις για τη Φόρμα Προσφοράς --- */
+
+/* Κεντράρισμα CTA κουμπιού */
+.main-cta {
+    justify-content: center;
+    margin-top: 2rem !important;
+    display: flex;
+}
+
+/* Τίτλοι ενοτήτων μέσα στη φόρμα */
+.field.section-divider {
+    width: 100% !important;
+    margin: 3rem 0 1rem 0 !important;
+    padding-top: 2rem !important;
+}
+
+.field.section-divider h3.major {
+    margin-bottom: 0 !important;
+    width: 100%;
+}
+
+/* Κλείδωμα 2x2 Grid */
+#quote .field.half {
+    width: calc(50% - 0.75rem) !important;
+    float: left;
+}
+
+#quote label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Responsive για κινητά */
+@media screen and (max-width: 480px) {
+    #quote .field.half {
+        width: 100% !important;
+        float: none;
+    }
+}
+
+/* 1. Βασικό στυλ για τα Labels (Radio & Checkbox) */
+#quote input[type="radio"] + label,
+#quote input[type="checkbox"] + label {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: left;
+    color: #ffffff !important; /* Εξασφαλίζει λευκό κείμενο */
+}
+
+/* 2. Κρύβουμε ΟΛΟΚΛΗΡΩΤΙΚΑ το αρχικό, χαλασμένο pseudo-element του template */
+#quote input[type="radio"] + label:before,
+#quote input[type="checkbox"] + label:before {
+    display: none !important;
+    content: '' !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* 3. Δημιουργούμε το δικό μας, καθαρό εικονίδιο Check (Font Awesome) */
+#quote input[type="checkbox"] + label:after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    
+    /* Περιεχόμενο: Το σύμβλλο check */
+    content: '\f00c';
+    
+    /* Θέση & Χρώμα */
+    margin-right: 0.75rem; /* Απόσταση από το κείμενο */
+    color: rgba(255, 255, 255, 0.25); /* Χρώμα όταν ΔΕΝ είναι επιλεγμένο */
+    transition: color 0.2s ease;
+}
+
+/* 4. Όταν είναι ΕΠΙΛΕΓΜΕΝΟ (Checked): Το εικονίδιο γίνεται έντονο λευκό */
+#quote input[type="checkbox"]:checked + label:after {
+    color: #ffffff !important;
+}
+
+/* --- Διόρθωση Radio Buttons (Για ομοιομορφία) --- */
+
+/* Δημιουργούμε τον κύκλο για τα Radio */
+#quote input[type="radio"] + label:after {
+    content: '';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.05);
+    margin-right: 0.75rem;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+    transition: all 0.2s ease;
+}
+
+/* Όταν το Radio είναι ΕΠΙΛΕΓΜΕΝΟ: Γεμίζει ο κύκλος */
+#quote input[type="radio"]:checked + label:after {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+/* Hover εφέ */
+#quote input[type="checkbox"] + label:hover:after,
+#quote input[type="radio"] + label:hover:after {
+    color: rgba(255, 255, 255, 0.75) !important;
+    border-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* --- Στοίχιση Radio & Checkbox Αριστερά --- */
+
+/* Απόκρυψη του default (χαλασμένου) εικονιδίου */
+#quote input[type="radio"] + label:before,
+#quote input[type="checkbox"] + label:before {
+    display: none !important;
+}
+
+#quote .custom-options label {
+    display: block !important;
+    position: relative;
+    padding-left: 2.5rem !important; /* Χώρος για το εικονίδιο αριστερά */
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* Δημιουργία του νέου κουτιού/κύκλου */
+#quote input[type="radio"] + label:after,
+#quote input[type="checkbox"] + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+/* Radio = Κύκλος */
+#quote input[type="radio"] + label:after {
+    border-radius: 50%;
+}
+
+/* Checkbox = Τετράγωνο */
+#quote input[type="checkbox"] + label:after {
+    border-radius: 4px;
+}
+
+/* Εφέ όταν επιλέγονται (Checked) */
+#quote input[type="radio"]:checked + label:after {
+    background-color: #ffffff !important;
+    box-shadow: inset 0 0 0 3px #242943; /* Δημιουργεί την "τελεία" στη μέση */
+}
+
+#quote input[type="checkbox"]:checked + label:after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: #242943;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+/* Ειδική ρύθμιση για το checkbox της πολιτικής απορρήτου στο τέλος */
+#quote #privacy_q + label {
+    padding-left: 2.5rem !important;
+    position: relative;
+}
+
+#footer .copyright a:hover {
+    opacity: 1 !important;
+    color: #ffffff !important;
+    text-decoration: underline;
+}
