@@ -157,6 +157,9 @@
 
 </ul>
 </nav>
+<ul class="actions main-cta">
+    <li><a href="#quote" class="button primary icon solid fa-calculator">Ζητηστε Προσφορα</a></li>
+</ul>
 </header>
 
 <div id="main">
@@ -171,9 +174,8 @@
 <div class="service">
 <span class="icon solid fa-map-marked-alt"></span>
 <h3>Τοπογραφικά Διαγράμματα</h3>
-<p>
-Σύνταξη τοπογραφικών διαγραμμάτων για μεταβιβάσεις, άδειες δόμησης και κάθε τεχνική χρήση.
-</p>
+<p> Σύνταξη τοπογραφικών διαγραμμάτων για μεταβιβάσεις, άδειες δόμησης και κάθε τεχνική χρήση.</p>
+<p><a href="#quote" class="button small">Προσφορά</a></p>
 </div>
 
 <div class="service">
@@ -365,12 +367,113 @@
 
 </article>
 
+<!-- ΠΡΟΣΦΟΡΑ -->
+<article id="quote">
+      <h2 class="major">Αίτημα Προσφοράς</h2>
+      <form method="post" action="https://formspree.io/f/mpqykqqk">
+          <div class="fields">
+              
+              <div class="field">
+                  <label for="usage">Τοπογραφικό κατάλληλο για:</label>
+                  <select name="usage" id="usage" required>
+                      <option value="">- Επιλέξτε σκοπό -</option>
+                      <option value="AGORAPOLISIA">Αγοραπωλησία</option>
+                      <option value="OIKODOMIKI_ADEIA">Άδεια Δόμησης</option>
+                      <option value="XARAKT_DASARXEIOU">Δασαρχείο</option>
+                      <option value="ENTOPISMO">Εντοπισμό ιδιοκτησίας</option>
+                      <option value="KATATMISH">Κατάτμηση Ιδιοκτησίας</option>
+                      <option value="KTIMATOLOGIO">Κτηματολόγιο</option>
+                      <option value="OTHER">Άλλη Χρήση</option>
+                  </select>
+              </div>
+
+              <div class="field">
+                  <label for="municipality">Η Ιδιοκτησία βρίσκεται στον Δήμο: *</label>
+                  <input type="text" name="municipality" id="municipality" required placeholder="π.χ. Δήμος Λουτρακίου" />
+              </div>
+
+              <div class="field">
+                  <label>Εμβαδό Ιδιοκτησίας:</label>
+                  <div class="row uniform">
+                      <div class="col-6 col-12-small">
+                          <input type="radio" id="area1" name="area_size" value="<500">
+                          <label for="area1">< 500 m²</label>
+                          <input type="radio" id="area2" name="area_size" value="<4000">
+                          <label for="area2">< 4.000 m²</label>
+                      </div>
+                      <div class="col-6 col-12-small">
+                          <input type="radio" id="area3" name="area_size" value="<10000">
+                          <label for="area3">< 10.000 m²</label>
+                          <input type="radio" id="area4" name="area_size" value=">10000">
+                          <label for="area4">> 10.000 m²</label>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="field">
+                  <label>Γενικά Χαρακτηριστικά της Έκτασης:</label>
+                  <input type="checkbox" id="feat1" name="feat_fence">
+                  <label for="feat1">Η έκταση είναι πλήρως περιφραγμένη</label>
+                  <input type="checkbox" id="feat2" name="feat_car">
+                  <label for="feat2">Υπάρχει πρόσβαση με αυτοκίνητο</label>
+                  <input type="checkbox" id="feat3" name="feat_boundaries">
+                  <label for="feat3">Τα όρια θα υποδειχθούν επί τόπου</label>
+              </div>
+
+              <div class="field section-divider">
+                  <h3 class="major">Στοιχεία Επαφής</h3>
+              </div>
+
+              <div class="field half">
+                  <label for="first_name">Όνομα *</label>
+                  <input type="text" name="first_name" id="first_name" required />
+              </div>
+              <div class="field half">
+                  <label for="last_name">Επώνυμο *</label>
+                  <input type="text" name="last_name" id="last_name" required />
+              </div>
+              <div class="field half">
+                  <label for="phone_q">Τηλέφωνο *</label>
+                  <input type="text" name="phone" id="phone_q" required />
+              </div>
+              <div class="field half">
+                  <label for="email_q">Email *</label>
+                  <input type="email" name="email" id="email_q" required />
+              </div>
+
+              <div class="field">
+                  <label>Τρόπος επικοινωνίας που προτιμάτε:</label>
+                  <input type="checkbox" id="pref_phone" name="pref_phone"><label for="pref_phone">Τηλέφωνο</label>
+                  <input type="checkbox" id="pref_email" name="pref_email"><label for="pref_email">Email</label>
+              </div>
+
+              <div class="field section-divider">
+                  <h3 class="major">Ερωτήσεις και Σχόλια</h3>
+              </div>
+
+              <div class="field">
+                  <label for="comments">Το μήνυμά σας</label>
+                  <textarea name="comments" id="comments" rows="6" placeholder="Γράψτε εδώ τις λεπτομέρειες..."></textarea>
+              </div>
+
+              <div class="field">
+                  <input type="checkbox" id="privacy_q" name="privacy" required>
+                  <label for="privacy_q">Έχω διαβάσει και συμφωνώ με την <a href="privacy.html" target="_blank" style="text-decoration: underline; color: #ffffff;">πολιτική απορρήτου</a>. *</label>
+              </div>
+          </div>
+          <ul class="actions">
+              <li><input type="submit" value="Υποβολη Προσφορας" class="primary" /></li>
+          </ul>
+      </form>
+  </article>
+
 </div>
 
 <footer id="footer">
-<p class="copyright">
-© 2026 Thaleia Tsafara
-</p>
+    <p class="copyright">
+        © 2026 Thaleia Tsafara <br />
+        <a href="privacy.html" style="border-bottom: none; font-size: 0.5rem; opacity: 0.5;">Πολιτική Απορρήτου</a>
+    </p>
 </footer>
 
 </div>
